@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RmvcHomework</title>
+    <title>rMVC Homework</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <nav>
+      <h6><%= link_to 'HOME', movies_path%></h6>
+    </nav>
     <%= yield %>
   </body>
 </html>

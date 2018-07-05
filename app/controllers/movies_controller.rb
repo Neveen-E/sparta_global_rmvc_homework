@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   def index
+    @mymovie = Movie.all
   end
 
   def new
@@ -9,6 +10,8 @@ class MoviesController < ApplicationController
   end
 
   def show
+    id = params[:id].to_i
+    @mymovie = Movie.find id
   end
 
   def delete
