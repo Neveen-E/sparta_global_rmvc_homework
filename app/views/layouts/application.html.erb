@@ -6,13 +6,19 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'movies'%>
+    <%= stylesheet_link_tag    'style' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
     <nav>
       <h6><%= link_to 'HOME', movies_path%></h6>
     </nav>
     <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
